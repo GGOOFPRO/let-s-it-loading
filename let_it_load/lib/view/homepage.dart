@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 30),
             Obx(
               () => Text(
-                'Multiplier: ${loadingPoint.pointMultiplyerAmount.value} | Interval: ${loadingPoint.pointPerSecond.value} ms',
+                'Points every ${loadingPoint.pointPerSecond.value} ms (x${loadingPoint.pointMultiplyerAmount.value})',
               ),
             ),
             SizedBox(height: 10),
@@ -85,7 +85,7 @@ class HomePage extends StatelessWidget {
                                 }
                                 : null,
                         child: Text(
-                          'Buy Point Multiplier: ${loadingPoint.speedUpPrice.value.toStringAsFixed(1)}',
+                          'Buy Speed Up: ${loadingPoint.speedUpPrice.value.toStringAsFixed(1)}',
                         ),
                       ),
                     ),
